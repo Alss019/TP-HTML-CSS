@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="couleur.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <div id="banner"></div>
+        <h1>Bienvenue sur mon site!</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#article3">Blog</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form method="POST" action="monsite.php">
+        <fieldset>
+            <legend>Contact</legend>
+                <div id="nom">
+                    <label for="Nom">Nom:<span>*</span></label>
+                    <input type="text" name="nom" placeholder="Nom" minlength="2" maxlength="20" id="nom":required><br>
+                </div>
+                <div id="email">
+                    <label for="E-mail">E-mail:<span>*</span></label>
+                    <input type="text" name="e-mail" placeholder="adresse@mail.com" id="e-mail" required><br>
+                </div>
+                <div>
+                    <label for="zone de texte">Laissez votre Commentaire:</label><br>
+                    <textarea name="zone de texte" rows="10" cols="70" placeholder="Ecrivez votre texte ici"></textarea><br>
+                </div>
+                <div>
+                    <input type="checkbox" checked><label for="checkbox">Envoie de la copie par E-mail</label>
+                </div>
+                <div>
+                    <input type="submit" value="Envoyer">
+                    <input type="reset" value="Reset">
+                </div>
+        </fieldset>
+        <footer>
+            <ul>
+                <li><a href="#">Mentions Légales</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">Aide</a></li>
+                <li><a href="#">Statut</a></li>
+            </ul>
+        </footer>
+    </form>
+</body>
+</html>
